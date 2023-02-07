@@ -70,7 +70,7 @@ def next_10_moves(data, y, tsc=0.7):
     
     sequences = []
 
-    # Collects the next y moves after the similar sequence
+    # Collects the next y moves after the similar sequences
     for index in indices:
         if index not in percentages[-x:]:
             seq = percentages[index + 1 + x : index + 1 + x + y]
