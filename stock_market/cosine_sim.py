@@ -7,9 +7,7 @@ from numpy import array
 import pandas as pd
 import sys
 from sklearn.metrics import mean_squared_error
-"""
 
-"""
 
 
 def main():
@@ -30,9 +28,10 @@ def next_10_moves(data, y, tsc=0.7):
     y = int(y)
     tsc = float(tsc)
 
-    #
+
+    # Size of chunks
     if y < 10:
-        x = 10 # Size of chunks
+        x = 10 
     else:
         x = y 
 
